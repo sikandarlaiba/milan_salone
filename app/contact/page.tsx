@@ -1,151 +1,112 @@
-import Grid12 from "@/components/Grid12";
+import type { Metadata } from "next";
+
+export const metadata: Metadata = {
+  title: "Contact — Milano Salone | DANS",
+  description: "For any enquiries about Milano Salone, or just to say hello, get in touch with DANS.",
+  alternates: { canonical: "https://dans-milano.com/contact" },
+};
+
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function ContactPage() {
   return (
-    <div className="flex flex-col min-h-screen">
+    <div className="relative flex flex-col min-h-screen">
+      {/* Background image — full page including footer */}
+      <div className="absolute inset-0 -z-10">
+        <Image
+          src="/images/contact/shapelined-_JBKdviweXI-unsplash.jpg"
+          alt=""
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover opacity-20"
+        />
+      </div>
+
       <Header />
 
-      {/* Background wrapper covers content + footer, but not header */}
-      <div className="relative flex flex-col flex-1">
-        {/* Full-bleed background image, breaks out of the 1920px max-width container */}
-        <div className="absolute inset-0 left-1/2 w-screen -translate-x-1/2 -z-10">
-          <Image
-            src="/images/contact/shapelined-_JBKdviweXI-unsplash.jpg"
-            alt=""
-            fill
-            priority
-            className="object-cover opacity-20"
-          />
-        </div>
+      {/* Content — outside <main> to avoid max-width:1920px centering from globals.css */}
+      <div className="flex-1 px-[10px] min-[1911px]:px-[65px] pt-[210px] pb-[100px]">
+          <div className="w-full flex flex-col min-[800px]:flex-row">
 
-        <main className="relative pt-[70px] flex-1">
-          {/* Contact intro */}
-          <section className="px-[10px] pt-[50px] md:pt-[100px] xl:pt-[100px] min-[1911px]:px-[65px]">
-            <Grid12 className="items-start md:grid-cols-12">
-              <h1 className="col-span-4 md:col-span-3 min-[1911px]:col-span-2 text-[15px] leading-none md:text-[21px]">
-                About DANS
-              </h1>
-
-              <div className="col-span-4 mt-[20px] md:col-start-5 md:col-span-8 md:mt-0 min-[1911px]:col-start-7 min-[1911px]:col-span-6 text-[15px] leading-[1.2] md:text-[20px] md:leading-[1.25]">
-                <p>
-                  We are a multidisciplinary studio, specialized in Business
-                  Strategy, Design and Architecture.
-                </p>
-
-                <p className="mt-[10px] md:mt-[10px]">
-                  DANS はデザインと建築、そして ビジネス戦略を統合する会社です。
-                </p>
-              </div>
-            </Grid12>
-          </section>
-
-          <div className="px-[10px] mt-[20px] md:mt-[20px] min-[1911px]:px-[65px] min-[1911px]:mt-[20px]">
-            <hr className="border-0 border-t border-black" />
-          </div>
-
-          {/* Business Enquiries */}
-          <section className="px-[10px] pt-[20px] md:pt-[20px] min-[1911px]:px-[65px] min-[1911px]:pt-[20px]">
-            <Grid12 className="items-start md:grid-cols-12">
-              {/* Mobile: inline "Label: link" */}
-              <p className="col-span-4 md:hidden text-[15px] leading-none">
-                Business Enquiries:{" "}
-                <a
-                  href="mailto:info@dans.jp"
-                  className="underline! hover:opacity-50 transition-opacity"
-                >
-                  info@dans.jp
-                </a>
-              </p>
-
-              {/* Tablet/Desktop: separate columns */}
-              <h2 className="hidden md:block md:col-span-3 min-[1911px]:col-span-2 text-[15px] leading-none font-normal md:text-[21px]">
-                Business Enquiries
-              </h2>
-
-              <div className="hidden md:block md:col-start-5 md:col-span-8 min-[1911px]:col-start-7 min-[1911px]:col-span-6 text-[15px] leading-[1.2] md:text-[20px] md:leading-[1.25]">
-                <a
-                  href="mailto:info@dans.jp"
-                  className="underline! hover:opacity-50 transition-opacity"
-                >
-                  info@dans.jp
-                </a>
-              </div>
-            </Grid12>
-          </section>
-
-          <div className="px-[10px] mt-[20px] md:mt-[20px] min-[1911px]:px-[65px] min-[1911px]:mt-[20px]">
-            <hr className="border-0 border-t border-black" />
-          </div>
-
-          {/* Contact Us */}
-          <section className="px-[10px] pt-[20px] md:pt-[20px] min-[1911px]:px-[65px] min-[1911px]:pt-[20px]">
-            <Grid12 className="items-start md:grid-cols-12">
-              {/* Mobile: inline "Label: link" */}
-              <p className="col-span-4 md:hidden text-[15px] leading-none">
-                Contact Us:{" "}
-                <a
-                  href="mailto:info@dans.jp"
-                  className="underline! hover:opacity-50 transition-opacity"
-                >
-                  info@dans.jp
-                </a>
-              </p>
-
-              {/* Tablet/Desktop: separate columns */}
-              <h2 className="hidden md:block md:col-span-3 min-[1911px]:col-span-2 text-[15px] leading-none font-normal md:text-[21px]">
+            {/* Left 50%: heading */}
+            <div className="min-[800px]:w-1/2 min-[800px]:pr-[20px]">
+              <h1
+                className="leading-[1.1] tracking-[-0.02em]"
+                style={{ fontSize: "clamp(38px, 5vw, 65px)" }}
+              >
                 Contact Us
-              </h2>
+              </h1>
+            </div>
 
-              <div className="hidden md:block md:col-start-5 md:col-span-8 min-[1911px]:col-start-7 min-[1911px]:col-span-6 text-[15px] leading-[1.2] md:text-[20px] md:leading-[1.25]">
-                <a
-                  href="mailto:info@dans.jp"
-                  className="underline! hover:opacity-50 transition-opacity"
+            {/* Right 50%: middle 25% + right 25% */}
+            <div className="mt-[40px] min-[800px]:mt-0 min-[800px]:w-1/2 flex flex-col min-[800px]:grid min-[800px]:grid-cols-2 min-[800px]:gap-x-[20px]">
+
+              {/* Middle 25% (= 50% of right half): English + Japanese texts */}
+              <div>
+                <p
+                  className="leading-[1.3] tracking-[-0.02em]"
+                  style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
                 >
-                  info@dans.jp
-                </a>
-              </div>
-            </Grid12>
-          </section>
-
-          <div className="px-[10px] mt-[20px] md:mt-[20px] min-[1911px]:px-[65px] min-[1911px]:mt-[20px]">
-            <hr className="border-0 border-t border-black" />
-          </div>
-
-          {/* Jobs */}
-          <section className="px-[10px] pt-[20px] md:pt-[20px] min-[1911px]:px-[65px] min-[1911px]:pt-[20px]">
-            <Grid12 className="items-start md:grid-cols-12">
-              <h2 className="col-span-4 min-[800px]:col-span-3 min-[1911px]:col-span-2 text-[15px] leading-none font-normal md:text-[21px]">
-                Jobs
-              </h2>
-
-              <div className="col-span-4 mt-[20px] md:col-start-5 md:col-span-8 md:mt-0 min-[1911px]:col-start-7 min-[1911px]:col-span-6 text-[15px] leading-[1.2] md:text-[20px] md:leading-[1.25]">
-                <p>
-                  We&apos;re always looking for talent, please send us your
-                  application (including CV/Portfolio) or questions to:
+                  For any enquiries about Milano Salone, or just to say hello, get in touch and contact us.
                 </p>
+                <p
+                  className="mt-[20px] min-[800px]:mt-[20px] leading-[1.5] tracking-[-0.02em]"
+                  style={{ fontSize: "clamp(19px, 2vw, 26px)" }}
+                >
+                  ミラノ・サローネに関するご相談やお問い合わせ等、お気軽にご連絡くださいませ。
+                </p>
+              </div>
 
-                <a
+              {/* Right 25% (= 50% of right half): contact info */}
+              <div className="mt-[50px] min-[800px]:mt-0 ">
+                <Link
                   href="mailto:info@dans.jp"
-                  className="underline! hover:opacity-50 transition-opacity"
+                  className="block leading-[1.2] tracking-[-0.02em] underline hover:opacity-50 transition-opacity"
+                  style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
                 >
                   info@dans.jp
-                </a>
+                </Link>
+
+                <div className="mt-[20px] min-[800px]:mt-[20px]">
+                  <p
+                    className="leading-[1.2] tracking-[-0.02em] text-[#8B8B8B]"
+                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                  >
+                    Tokyo Office
+                  </p>
+                  <p
+                    className="leading-[1.2] tracking-[-0.02em]"
+                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                  >
+                    +81 3 64349498
+                  </p>
+                </div>
+
+                <div className="mt-[20px] min-[800px]:mt-[20px]">
+                  <p
+                    className="leading-[1.2] tracking-[-0.02em] text-[#8B8B8B]"
+                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                  >
+                    Milan Office
+                  </p>
+                  <p
+                    className="leading-[1.2] tracking-[-0.02em]"
+                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                  >
+                    +39 02 36560702
+                  </p>
+                </div>
               </div>
-            </Grid12>
-          </section>
 
-          <div className="px-[10px] pt-[20px] md:pt-[20px] xl:pt-[20px] min-[1911px]:px-[65px]">
-            <hr className="border-0 border-t border-black" />
+            </div>
           </div>
-        </main>
-
-        <div>
-          <Footer />
-        </div>
       </div>
+
+      <Footer />
     </div>
   );
 }

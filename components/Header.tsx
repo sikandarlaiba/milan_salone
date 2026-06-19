@@ -17,41 +17,38 @@ export default function Header() {
   return (
     <>
       <header className="fixed top-0 left-0 w-full z-50 bg-[#F5F5F5]">
-        <div className="h-[70px] px-[10px] min-[1911px]:px-[40px] flex items-center">
+        <div className="h-[70px] px-[10px] min-[1911px]:px-[65px] flex items-center">
           {/* Logo */}
-          <Link href="/" className="block" aria-label="DANS home">
+          <div className="flex items-center gap-[20px]">
+            <Link href="/" className="block" aria-label="DANS home">
+              <Image
+                src="/images/logo/DANS_logo_800x800px copy.png"
+                alt="DANS"
+                width={130}
+                height={130}
+                style={{ height: "auto" }}
+                priority
+              />
+            </Link>
             <Image
-              src="/images/logo/DANS_logo_800x800px copy.png"
-              alt="DANS"
-              width={130}
-              height={130}
-              style={{ height: "auto" }}
+              src="/images/logo/SALONE_logo_800x800px copy.png"
+              alt="Milano Salone"
+              width={170}
+              height={170}
+              style={{ height: "auto", filter: "invert(1) brightness(0.455) invert(1)" }}
               priority
             />
-          </Link>
+          </div>
 
-          {/* Desktop */}
-          <nav className="hidden xl:flex ml-auto pr-[210px]">
-            <ul className="flex gap-[95px]">
+          {/* Desktop nav (xl+) and Tablet nav (800px–1279px) */}
+          <nav className="hidden min-[800px]:flex ml-auto xl:pr-[210px]">
+            <ul className="flex" style={{ gap: "clamp(30px, 6.5vw, 95px)" }}>
               {menu.map((item) => (
                 <li key={item.name}>
                   <Link
                     href={item.href}
-                    className="text-[20px] font-bold hover:opacity-50 transition-opacity"
+                    className="text-[20px] font-bold hover:opacity-50 transition-opacity whitespace-nowrap"
                   >
-                    {item.name}
-                  </Link>
-                </li>
-              ))}
-            </ul>
-          </nav>
-
-          {/* Tablet: 800px - 1279px */}
-          <nav className="hidden min-[800px]:flex xl:hidden ml-auto pr-[40px]">
-            <ul className="flex gap-[95px]">
-              {menu.map((item) => (
-                <li key={item.name}>
-                  <Link href={item.href} className="text-[20px] font-bold hover:opacity-50 transition-opacity">
                     {item.name}
                   </Link>
                 </li>
@@ -78,16 +75,26 @@ export default function Header() {
         <div className="fixed inset-0 bg-[#F5F5F5] z-50 min-[800px]:hidden flex flex-col px-[10px] pt-[20px]">
           {/* Top row: logo + close button */}
           <div className="flex items-center justify-between h-[70px]">
-            <Link href="/" onClick={() => setOpen(false)} aria-label="DANS home">
+            <div className="flex items-center gap-[10px]">
+              <Link href="/" onClick={() => setOpen(false)} aria-label="DANS home">
+                <Image
+                  src="/images/logo/DANS_logo_800x800px copy.png"
+                  alt="DANS"
+                  width={130}
+                  height={130}
+                  style={{ height: "auto" }}
+                  priority
+                />
+              </Link>
               <Image
-                src="/images/logo/DANS_logo_800x800px copy.png"
-                alt="DANS"
+                src="/images/logo/SALONE_logo_800x800px copy.png"
+                alt="Milano Salone"
                 width={130}
                 height={130}
-                style={{ height: "auto" }}
+                style={{ height: "auto", filter: "invert(1) brightness(0.455) invert(1)" }}
                 priority
               />
-            </Link>
+            </div>
             <button
               type="button"
               aria-label="Close menu"
