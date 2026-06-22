@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Contact — Milano Salone | DANS",
-  description: "For any enquiries about Milano Salone, or just to say hello, get in touch with DANS.",
+  title: "お問い合わせ",
+  description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスで、日本語・イタリア語・英語対応しています。",
   alternates: { canonical: "https://dans-milano.com/contact" },
+  openGraph: {
+    title: "お問い合わせ | DANS",
+    description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスで、日本語・イタリア語・英語対応しています。",
+    url: "/contact",
+    images: [{ url: "/images/contact/shapelined-_JBKdviweXI-unsplash.jpg", width: 1200, height: 630, alt: "DANS お問い合わせ" }],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "お問い合わせ | DANS",
+    description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。",
+    images: ["/images/contact/shapelined-_JBKdviweXI-unsplash.jpg"],
+  },
 };
 
 import Header from "@/components/Header";
@@ -36,7 +48,7 @@ export default function ContactPage() {
             <div className="min-[800px]:w-1/2 min-[800px]:pr-[20px]">
               <h1
                 className="leading-[1.1] tracking-[-0.02em]"
-                style={{ fontSize: "clamp(38px, 5vw, 65px)" }}
+                style={{ fontSize: "clamp(32px, 5vw, 58px)" }}
               >
                 Contact Us
               </h1>
@@ -49,15 +61,15 @@ export default function ContactPage() {
               <div>
                 <p
                   className="leading-[1.3] tracking-[-0.02em]"
-                  style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                  style={{ fontSize: "clamp(19px, 2.2vw, 24px)" }}
                 >
-                  For any enquiries about Milano Salone, or just to say hello, get in touch and contact us.
+                  For any enquiries about Milano Salone and Milan Design Week, Please feel free to contact us with any questions or inquiries regarding participation.
                 </p>
                 <p
                   className="mt-[20px] min-[800px]:mt-[20px] leading-[1.5] tracking-[-0.02em]"
-                  style={{ fontSize: "clamp(19px, 2vw, 26px)" }}
+                  style={{ fontSize: "clamp(18px, 2vw, 23px)" }}
                 >
-                  ミラノ・サローネに関するご相談やお問い合わせ等、お気軽にご連絡くださいませ。
+                  ミラノ・サローネ及びミラノデザインウィークご参加に関するご相談やお問い合わせ等、お気軽にご連絡くださいませ。
                 </p>
               </div>
 
@@ -65,8 +77,8 @@ export default function ContactPage() {
               <div className="mt-[50px] min-[800px]:mt-0 ">
                 <Link
                   href="mailto:info@dans.jp"
-                  className="block leading-[1.2] tracking-[-0.02em] underline hover:opacity-50 transition-opacity"
-                  style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                  className="underline! block leading-[1.2] tracking-[-0.02em] underline hover:opacity-50 transition-opacity"
+                  style={{ fontSize: "clamp(19px, 2.2vw, 24px)" }}
                 >
                   info@dans.jp
                 </Link>
@@ -74,13 +86,13 @@ export default function ContactPage() {
                 <div className="mt-[20px] min-[800px]:mt-[20px]">
                   <p
                     className="leading-[1.2] tracking-[-0.02em] text-[#8B8B8B]"
-                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                    style={{ fontSize: "clamp(19px, 2.2vw, 24px)" }}
                   >
                     Tokyo Office
                   </p>
                   <p
                     className="leading-[1.2] tracking-[-0.02em]"
-                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                    style={{ fontSize: "clamp(19px, 2.2vw, 24px)" }}
                   >
                     +81 3 64349498
                   </p>
@@ -89,13 +101,13 @@ export default function ContactPage() {
                 <div className="mt-[20px] min-[800px]:mt-[20px]">
                   <p
                     className="leading-[1.2] tracking-[-0.02em] text-[#8B8B8B]"
-                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                    style={{ fontSize: "clamp(19px, 2.2vw, 24px)" }}
                   >
                     Milan Office
                   </p>
                   <p
                     className="leading-[1.2] tracking-[-0.02em]"
-                    style={{ fontSize: "clamp(20px, 2.2vw, 28px)" }}
+                    style={{ fontSize: "clamp(19px, 2.2vw, 24px)" }}
                   >
                     +39 02 36560702
                   </p>

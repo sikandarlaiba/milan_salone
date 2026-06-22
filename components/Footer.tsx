@@ -1,8 +1,14 @@
+"use client";
+
+import { useState } from "react";
 import Link from "next/link";
+import PrivacyModal from "@/components/PrivacyModal";
 
 export default function Footer() {
+  const [isPrivacyOpen, setIsPrivacyOpen] = useState(false);
+
   return (
-    <footer className="px-[10px] min-[1911px]:px-[65px] pt-[40px] pb-[40px] xl:pt-[50px] xl:pb-[50px] text-[15px] min-[800px]:text-[17px] xl:text-[19px]">
+    <footer className="px-[10px] min-[1911px]:px-[65px] pt-[40px] pb-[40px] xl:pt-[50px] xl:pb-[50px] text-[13px] min-[800px]:text-[14px] xl:text-[16px]">
       {/* Top section */}
       {/* Mobile (<800px): single column stack */}
       {/* Desktop (≥800px): description left 50% | Milan + Tokyo right 50% */}
@@ -43,17 +49,23 @@ export default function Footer() {
         <div className="min-[800px]:w-1/2 min-[800px]:grid min-[800px]:grid-cols-2 min-[800px]:gap-x-[20px]">
           <p className="mt-[20px] min-[800px]:mt-0">
             Business Enquiries:{" "}
-            <Link href="mailto:info@dans.jp" className="hover:opacity-50 transition-opacity">
+            <Link href="mailto:info@dans.jp" className="hover:opacity-50 transition-opacity underline!">
               info@dans.jp
             </Link>
           </p>
           <p className="mt-[20px] min-[800px]:mt-0">
-            <Link href="/privacy" className="hover:opacity-50 transition-opacity">
+            <button
+              type="button"
+              onClick={() => setIsPrivacyOpen(true)}
+              className="hover:opacity-50 transition-opacity"
+            >
               Privacy Policy
-            </Link>
+            </button>
           </p>
         </div>
       </div>
+
+      <PrivacyModal isOpen={isPrivacyOpen} onClose={() => setIsPrivacyOpen(false)} />
     </footer>
   );
 }

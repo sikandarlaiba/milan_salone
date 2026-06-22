@@ -17,6 +17,17 @@ import Footer from "@/components/Footer";
 import Nav from "@/components/Nav";
 import Image from "next/image";
 
+const projectSchema = {
+  "@context": "https://schema.org",
+  "@type": "CreativeWork",
+  name: "KO-GHEI — Milano Salone",
+  url: "https://dans-milano.com/works/koghei",
+  description: "DANSがサポートしたKO-GHEIのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+  image: "https://dans-milano.com/images/credits/ko_ghei/kougei_img01.png",
+  creator: { "@type": "Organization", name: "DANS", url: "https://dans-milano.com" },
+  client: { "@type": "Organization", name: "KO-GHEI" },
+};
+
 const base = "/images/credits/ko_ghei";
 
 const fullImages = [
@@ -44,24 +55,6 @@ const pairImagesB = [
   `${base}/kougei_img12_2.png`,
 ];
 
-
-const projectSchema = {
-  "@context": "https://schema.org",
-  "@type": "CreativeWork",
-  name: "KO-GHEI — Milano Salone",
-  url: "https://dans-milano.com/works/koghei",
-  description: "DANSがサポートしたKO-GHEIのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  image: "https://dans-milano.com/images/credits/ko_ghei/kougei_img01.png",
-  creator: {
-    "@type": "Organization",
-    name: "DANS",
-    url: "https://dans-milano.com",
-  },
-  client: {
-    "@type": "Organization",
-    name: "ANA JAPAN",
-  },
-};
 
 export default function KoGheiPage() {
   return (
