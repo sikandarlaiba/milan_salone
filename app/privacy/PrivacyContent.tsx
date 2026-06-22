@@ -165,7 +165,7 @@ function SimplifiedPolicy() {
           <PersonIcon />
           Owner and Data Controller
         </p>
-        <p className="mt-[8px]">DANS INC/Triumph Design Resource s.r.l</p>
+        <p className="mt-[8px]">DANS INC</p>
         <p>Via Ebro 4</p>
         <p>20141 Milano(Italia)</p>
         <p className="mt-[12px]">
@@ -175,7 +175,7 @@ function SimplifiedPolicy() {
 
       <Divider />
 
-      <p>Latest update: July 14, 2023</p>
+      <p>Latest update: June, 2026</p>
       <p className="mt-[16px]">
         Dans hosts this content and only collects the Personal Data strictly necessary for it to be provided.
       </p>
@@ -195,7 +195,7 @@ function CompletePolicy() {
         Owner and Data Controller
       </h2>
       <div className="mt-[16px]">
-        <p>DANS INC/Triumph Design Resource s.r.l</p>
+        <p>DANS INC</p>
         <p>Via Ebro 4</p>
         <p>20141 Milano(Italia)</p>
         <p className="mt-[12px]">
@@ -460,7 +460,7 @@ function CompletePolicy() {
 
       <Divider />
 
-      <p>Latest update: July 14, 2023</p>
+      <p>Latest update: July, 2026</p>
       <p className="mt-[16px]">
         Dans hosts this content and only collects the Personal Data strictly necessary for it to be provided.
       </p>
