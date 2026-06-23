@@ -44,7 +44,7 @@ export default function Footer() {
       {/* Desktop: copyright left 50% | business + privacy right 50% */}
       <div className="mt-[20px] xl:mt-[25px] flex flex-col min-[800px]:flex-row">
         <div className="min-[800px]:w-1/2">
-          <p>© 2025 DANS Inc. All Rights Reserved</p>
+          <p>© 2026 DANS Inc. All Rights Reserved</p>
         </div>
         <div className="min-[800px]:w-1/2 min-[800px]:grid min-[800px]:grid-cols-2 min-[800px]:gap-x-[20px]">
           <p className="mt-[20px] min-[800px]:mt-0">
@@ -57,7 +57,7 @@ export default function Footer() {
             <button
               type="button"
               onClick={() => setIsPrivacyOpen(true)}
-              className="hover:opacity-50 transition-opacity"
+              className="underline! hover:opacity-50 transition-opacity"
             >
               Privacy Policy
             </button>

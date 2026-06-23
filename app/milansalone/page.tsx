@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import { SITE_URL } from "@/lib/site";
 
 const milansaloneSchema = {
   "@context": "https://schema.org",
   "@type": "WebPage",
   name: "ミラノサローネとは | DANS",
-  url: "https://dans-milano.com/milansalone",
+  url: `${SITE_URL}/milansalone`,
   description:
     "ミラノサローネ（Salone del Mobile.Milano）とフォーリサローネについて解説。世界最大のデザイン見本市の規模・来場者数・メディア注目度と、DANSによる出展サポートをご紹介します。",
   inLanguage: ["ja", "en"],
@@ -35,7 +36,7 @@ export const metadata: Metadata = {
   description:
     "ミラノサローネ（Salone del Mobile.Milano）とフォーリサローネについて解説。世界最大のデザイン見本市の規模・来場者数・メディア注目度と、DANSによる出展サポートをご紹介します。",
   alternates: {
-    canonical: "https://dans-milano.com/milansalone",
+    canonical: `${SITE_URL}/milansalone`,
   },
   openGraph: {
     title: "ミラノサローネとは | DANS",

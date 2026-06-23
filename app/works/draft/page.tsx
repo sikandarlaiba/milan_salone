@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "DRAFT — Milano Salone",
   description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  alternates: { canonical: "https://dans-milano.com/works/draft" },
+  alternates: { canonical: `${SITE_URL}/works/draft` },
   openGraph: {
     title: "DRAFT — Milano Salone | DANS",
     description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
@@ -35,13 +36,13 @@ const projectSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   name: "DRAFT — Milano Salone",
-  url: "https://dans-milano.com/works/draft",
+  url: `${SITE_URL}/works/draft`,
   description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  image: "https://dans-milano.com/images/credits/drafts/DAFT_about_DRAFT_26_DSC01280_s_e.png",
+  image: `${SITE_URL}/images/credits/drafts/DAFT_about_DRAFT_26_DSC01280_s_e.png`,
   creator: {
     "@type": "Organization",
     name: "DANS",
-    url: "https://dans-milano.com",
+    url: SITE_URL,
   },
   client: {
     "@type": "Organization",
@@ -73,7 +74,7 @@ export default function DraftPage() {
 
         {/* Project info + description */}
         <section className="px-[10px] pt-[40px] pb-[40px] md:pt-[60px] md:pb-[60px] xl:pt-[80px] xl:pb-[80px] min-[1911px]:px-[65px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[18px] xl:text-[20px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[21px] xl:text-[23px]">
             <div>
               <div className="md:flex md:gap-[10px]">
                 <p className="text-[#8B8B8B] md:w-[160px] xl:w-[200px] flex-shrink-0">Client</p>
@@ -97,10 +98,19 @@ export default function DraftPage() {
 
             <div>
               <p className="body-en">
-                The Saintnine Tokyo embodies its brand philosophy, &ldquo;Play with Soul,&rdquo; pursuing a unique approach that fuses intelligence and emotion within the world of sports. From spatial design to the creation of a comprehensive brand identity — including the logo — the project achieved total branding integration. Every element that shapes the golfing experience, such as carts, tee markers, and course maps, was meticulously designed to infuse the brand&apos;s worldview throughout the entire space.
+                DRAFT is a premium furniture brand developed by DRAFT Inc. Through its continuous participation in the Salone del Mobile.Milano, the brand has steadily strengthened its international presence and recognition within the global design community.
+                In 2026, DAFT about DRAFT departed from Rho Fiera Milano, where it had exhibited for three consecutive years, and presented its work for the first time as part of the Fuorisalone program during Milan Design Week.
               </p>
-              <p className="body-jp mt-[20px]">
-                The Saintnine Tokyoは、「Play with Soul」というブランドフィロソフィーのもと、スポーツに知性と感性を融合させる独自のアプローチを追求。空間設計からロゴを含むブランド・アイデンティティ構築まで一貫して手がけたトータルブランディングを実現したプロジェクト。カートやティーマーカー、コースマップなど構成するすべての要素をデザインし、ブランドの世界観を空間全体に浸透させた。
+              <p className="mt-[10px]">
+                Installed within the auditorium of Teatro Gerolamo, a historic opera-style theater established in 1868 and located near Milan Cathedral, the exhibition featured a monumental 4.8-meter-tall chair. The piece was fabricated in Italy using advanced 3D-printing technology and finished with meticulously crafted faux-finishing techniques by the specialist scenic art team of Teatro alla Scala, one of Italy’s most renowned opera houses.
+              </p>
+                
+              <p className="body-jp mt-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
+                DRAFT は DRAFT社の擁する新進気鋭の高級具ブランドであり、ミラノサローネには継続的に参加を続けながら、国際的な文脈におけるブランド認知を高めている。
+                2026年度は、これまで3年に渡りミラノサローネ展示を行ったRho Fiera 会場を離れ、初めてフォーリサローネとして知られるミラノデザインウィーク場外展示を行った。
+              </p>
+              <p className="body-jp mt-[10px] text-[15px] md:text-[20px] xl:text-[22px]">
+                大聖堂至近に位置する、1868年開館のオペラシアター型小劇場 ”Teatro Geroramo”の客席空間に設営された4.8メートルの巨大椅子は、イタリア国内にて３Dプリンティング技術を駆使して製作され、外装にはミラノ・スカラ座の専門美術チームによって丁寧な美術偽装塗装が施された。
               </p>
             </div>
           </div>

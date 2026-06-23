@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
   description: "DANSのプライバシーポリシー。",
-  alternates: { canonical: "https://dans-milano.com/privacy" },
+  alternates: { canonical: `${SITE_URL}/privacy` },
 };
 
 import Header from "@/components/Header";

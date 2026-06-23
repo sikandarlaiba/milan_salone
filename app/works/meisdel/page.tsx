@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "MEISDEL — Milano Salone",
   description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  alternates: { canonical: "https://dans-milano.com/works/meisdel" },
+  alternates: { canonical: `${SITE_URL}/works/meisdel` },
   openGraph: {
     title: "MEISDEL — Milano Salone | DANS",
     description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
@@ -33,13 +34,13 @@ const projectSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   name: "MEISDEL — Milano Salone",
-  url: "https://dans-milano.com/works/meisdel",
+  url: `${SITE_URL}/works/meisdel`,
   description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  image: "https://dans-milano.com/images/credits/meisdel/MEIS_MITSUI_2.JPG",
+  image: `${SITE_URL}/images/credits/meisdel/MEIS_MITSUI_2.JPG`,
   creator: {
     "@type": "Organization",
     name: "DANS",
-    url: "https://dans-milano.com",
+    url: SITE_URL,
   },
   client: {
     "@type": "Organization",

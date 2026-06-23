@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import { SITE_URL } from "@/lib/site";
 
 const serviceSchema = {
   "@context": "https://schema.org",
@@ -8,7 +9,7 @@ const serviceSchema = {
   provider: {
     "@type": "Organization",
     name: "DANS",
-    url: "https://dans-milano.com",
+    url: SITE_URL,
   },
   serviceType: "展示会出展サポート",
   areaServed: ["JP", "IT"],
@@ -34,7 +35,7 @@ export const metadata: Metadata = {
   description:
     "DANSのミラノサローネ出展サポートサービス詳細。事前リサーチ・展示スペース選定・イベント企画・デザイン・製作施工・PR＆マーケティング・運営管理まで、出展に必要な全工程をワンストップで対応します。",
   alternates: {
-    canonical: "https://dans-milano.com/service",
+    canonical: `${SITE_URL}/service`,
   },
   openGraph: {
     title: "サービス内容 | DANS",

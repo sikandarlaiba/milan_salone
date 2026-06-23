@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "TOYOTA Setsuna — Milano Salone",
   description: "DANSがプロデュースしたTOYOTA Setsunaのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  alternates: { canonical: "https://dans-milano.com/works/toyota" },
+  alternates: { canonical: `${SITE_URL}/works/toyota` },
   openGraph: {
     title: "TOYOTA Setsuna — Milano Salone | DANS",
     description: "DANSがプロデュースしたTOYOTA Setsunaのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
@@ -76,13 +77,13 @@ const projectSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   name: "TOYOTA Setsuna — Milano Salone",
-  url: "https://dans-milano.com/works/toyota",
+  url: `${SITE_URL}/works/toyota`,
   description: "DANSがプロデュースしたTOYOTA Setsunaのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  image: "https://dans-milano.com/images/credits/toyota/TOYOTA-SALONE_Setsuna-1.jpg",
+  image: `${SITE_URL}/images/credits/toyota/TOYOTA-SALONE_Setsuna-1.jpg`,
   creator: {
     "@type": "Organization",
     name: "DANS",
-    url: "https://dans-milano.com",
+    url: SITE_URL,
   },
   client: {
     "@type": "Organization",
@@ -114,7 +115,7 @@ export default function ToyotaPage() {
 
         {/* Project info + description */}
         <section className="px-[10px] pt-[40px] pb-[40px] md:pt-[40px] md:pb-[40px] xl:pt-[50px] xl:pb-[50px] min-[1911px]:px-[65px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[18px] xl:text-[20px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[21px] xl:text-[23px]">
             <div>
               <div className="md:flex md:gap-[10px]">
                 <p className="text-[#8B8B8B] md:w-[160px] xl:w-[200px] flex-shrink-0">Client</p>
@@ -141,7 +142,7 @@ export default function ToyotaPage() {
               <p>
                 In an era where automobiles have become highly industrialised products, Toyota sought to revisit the original spirit of mobility — a vehicle&apos;s ability to connect families and strengthen emotional bonds. To share this philosophy with the world, Toyota chose to exhibit at Milan Design Week (Salone del Mobile) — an event known as the pinnacle of human design. With automotive experience as a producer at the event, DANS was commissioned to work on Setsuna, responsible for all aspects of planning, production, and management, except for the wooden show car that had already been developed by Toyota.
               </p>
-              <p className="mt-[20px]">
+              <p className="mt-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 クルマが高度に工業化された時代に、トヨタは移動の本来の精神、つまり家族をつなぎ感情的な絆を育むクルマの本質に立ち戻ることを目指しました。このフィロソフィーを世界と共有するため、トヨタはデザインの頂点として知られるミラノデザインウィーク（サローネ・デル・モービレ）への出展を選択しました。イベントのプロデューサーとしての自動車業界での経験を活かし、DANSは「Setsuna」を担当。木製のショーカーはすでにトヨタが開発していたものを除き、企画・製作・管理に至るすべての工程を担いました。
               </p>
             </div>

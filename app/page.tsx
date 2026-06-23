@@ -1,11 +1,12 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import { SITE_URL } from "@/lib/site";
 
 const homeSchema = {
   "@context": "https://schema.org",
   "@type": "WebSite",
   name: "DANS",
-  url: "https://dans-milano.com",
+  url: SITE_URL,
   description: "DANSは、ミラノサローネ・フォーリサローネへの出展を現場リサーチから展示企画・設計・運営・PR＆マーケティングまで一貫してサポートします。",
   inLanguage: ["ja", "en"],
 };
@@ -15,7 +16,7 @@ export const metadata: Metadata = {
   description:
     "DANSは、ミラノサローネ・フォーリサローネへの出展を現場リサーチから展示企画・設計・運営・PR＆マーケティングまで一貫してサポートします。",
   alternates: {
-    canonical: "https://dans-milano.com",
+    canonical: SITE_URL,
   },
   openGraph: {
     title: "DANS | ミラノサローネ出展サポートサービス",

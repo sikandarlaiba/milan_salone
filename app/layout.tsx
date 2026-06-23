@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Noto_Sans_JP } from "next/font/google";
 import "./globals.css";
+import { SITE_URL } from "@/lib/site";
 
 const noto = Noto_Sans_JP({
   variable: "--font-noto-sans-jp",
@@ -8,7 +9,7 @@ const noto = Noto_Sans_JP({
   weight: ["400", "500", "700"],
 });
 
-const siteUrl = "https://dans-milano.com";
+const siteUrl = SITE_URL;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -48,7 +49,7 @@ const organizationSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   name: "DANS",
-  url: "https://dans-milano.com",
+  url: siteUrl,
   description:
     "ミラノサローネ・フォーリサローネへの出展を現場リサーチから展示企画・設計・運営・PR＆マーケティングまで一貫してサポートするエージェンシー。",
   areaServed: ["JP", "IT"],

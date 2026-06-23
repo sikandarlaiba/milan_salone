@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "KO-GHEI — Milano Salone",
   description: "DANSがサポートしたKO-GHEIのミラノサローネ出展。展示企画・空間設計・運営・PR&マーケティングを一貫してサポート。",
-  alternates: { canonical: "https://dans-milano.com/works/koghei" },
+  alternates: { canonical: `${SITE_URL}/works/koghei` },
   openGraph: {
     title: "KO-GHEI — Milano Salone | DANS",
     description: "DANSがサポートしたKO-GHEIのミラノサローネ出展。展示企画・空間設計・運営・PR&マーケティングを一貫してサポート。",
@@ -21,10 +22,10 @@ const projectSchema = {
   "@context": "https://schema.org",
   "@type": "CreativeWork",
   name: "KO-GHEI — Milano Salone",
-  url: "https://dans-milano.com/works/koghei",
+  url: `${SITE_URL}/works/koghei`,
   description: "DANSがサポートしたKO-GHEIのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
-  image: "https://dans-milano.com/images/credits/ko_ghei/kougei_img01.png",
-  creator: { "@type": "Organization", name: "DANS", url: "https://dans-milano.com" },
+  image: `${SITE_URL}/images/credits/ko_ghei/kougei_img01.png`,
+  creator: { "@type": "Organization", name: "DANS", url: SITE_URL },
   client: { "@type": "Organization", name: "KO-GHEI" },
 };
 
@@ -80,7 +81,7 @@ export default function KoGheiPage() {
 
         {/* Project info + description */}
         <section className="px-[10px] pt-[40px] pb-[40px] md:pt-[60px] md:pb-[60px] xl:pt-[80px] xl:pb-[80px] min-[1911px]:px-[65px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[18px] xl:text-[20px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[21px] xl:text-[23px]">
             <div>
               <div className="md:flex md:gap-[10px]">
                 <p className="text-[#8B8B8B] md:w-[160px] xl:w-[200px] flex-shrink-0">Client</p>
@@ -114,7 +115,7 @@ export default function KoGheiPage() {
                 meticulously designed to infuse the brand&apos;s worldview
                 throughout the entire space.
               </p>
-              <p className="body-jp mt-[20px]">
+              <p className="body-jp text-[15px] md:text-[20px] xl:text-[22px]">
                 The Saintnine Tokyoは、「Play with Soul」というブランドフィロソフィーのもと、スポーツに知性と感性を融合させる独自のアプローチを追求。空間設計からロゴを含むブランド・アイデンティティ構築まで一貫して手がけたトータルブランディングを実現したプロジェクト。カートやティーマーカー、コースマップなど構成するすべての要素をデザインし、ブランドの世界観を空間全体に浸透させた。
               </p>
             </div>

@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "お問い合わせ",
   description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスで、日本語・イタリア語・英語対応しています。",
-  alternates: { canonical: "https://dans-milano.com/contact" },
+  alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     title: "お問い合わせ | DANS",
     description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスで、日本語・イタリア語・英語対応しています。",

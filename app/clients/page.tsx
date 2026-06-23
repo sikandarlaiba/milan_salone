@@ -1,9 +1,10 @@
 import type { Metadata } from "next";
+import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "クライアント実績",
   description: "DANSがミラノサローネ出展をサポートしたクライアント一覧。トヨタ・ダイキンをはじめ、多数の日本企業の出展をプロデュースしてきました。",
-  alternates: { canonical: "https://dans-milano.com/clients" },
+  alternates: { canonical: `${SITE_URL}/clients` },
   openGraph: {
     title: "クライアント実績 | DANS",
     description: "DANSがミラノサローネ出展をサポートしたクライアント一覧。トヨタ・ダイキンをはじめ、多数の日本企業の出展をプロデュースしてきました。",

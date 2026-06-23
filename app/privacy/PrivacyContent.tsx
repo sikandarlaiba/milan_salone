@@ -1,14 +1,16 @@
 "use client";
 
 import { useState } from "react";
+import { SITE_URL } from "@/lib/site";
 
 export default function PrivacyContent() {
   const [view, setView] = useState<"simplified" | "complete">("simplified");
+  const siteHost = SITE_URL.replace(/^https?:\/\//, "");
 
   return (
     <div className="max-w-[900px] mx-auto text-[13px] min-[800px]:text-[14px] xl:text-[16px] leading-[1.8]">
       <h1 className="text-[24px] min-[800px]:text-[28px] xl:text-[32px] font-medium">
-        Privacy Policy of <span className="font-bold">www.dans.jp/</span>
+        Privacy Policy of <span className="font-bold">{siteHost}/</span>
       </h1>
       <p className="mt-[16px]">This Application collects some Personal Data from its Users.</p>
 
