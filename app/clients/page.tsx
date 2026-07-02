@@ -28,7 +28,7 @@ export default function ClientsPage() {
           {/* Desktop / Tablet */}
           <div className="hidden md:block">
             <Image
-              src="/images/clients/dans CLIENTS_1.jpg"
+              src="/images/clients/dans CLIENTS.png"
               alt="Our clients"
               width={3457}
               height={2161}

@@ -111,7 +111,8 @@ export default function ServiceContent() {
           </p>
 
           <p className="body-jp mt-[10px] max-w-[800px] text-[15px] leading-[1.6] md:text-[17px] xl:text-[22px]">
-            インターナショナルデザインチームを率いる弊社は、日本語で展示内容コンセプト企画から現地イベント運営まで一貫したサポートをご提供できます。
+            インターナショナルデザインチームを率いる弊社は、日本語で展示内容コンセプト企画から
+            <br />現地イベント運営まで一貫したサポートをご提供できます。
           </p>
         </div>
       </section>
