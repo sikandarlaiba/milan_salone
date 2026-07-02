@@ -20,7 +20,7 @@ export default function Header() {
         <div className="h-[70px] px-[10px] min-[1911px]:px-[65px] flex items-center">
           {/* Logo */}
           <div className="flex items-center gap-[20px]">
-            <Link href="/" className="block" aria-label="DANS home">
+            <Link href="https://dans.jp" className="block" aria-label="DANS home">
               <Image
                 src="/images/logo/DANS_logo_800x800px copy.png"
                 alt="DANS"
@@ -76,7 +76,7 @@ export default function Header() {
           {/* Top row: logo + close button */}
           <div className="flex items-center justify-between h-[70px]">
             <div className="flex items-center gap-[10px]">
-              <Link href="/" onClick={() => setOpen(false)} aria-label="DANS home">
+              <Link href="https://dans.jp" onClick={() => setOpen(false)} aria-label="DANS home">
                 <Image
                   src="/images/logo/DANS_logo_800x800px copy.png"
                   alt="DANS"
