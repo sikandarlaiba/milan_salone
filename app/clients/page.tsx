@@ -24,7 +24,7 @@ export default function ClientsPage() {
 
       <main className="relative pt-[65px] md:pt-[61px] xl:pt-[75px] flex-1">
         <h1 className="sr-only">クライアント実績 — DANSがサポートしたミラノサローネ出展</h1>
-        <section className="px-[10px] pt-[50px] pb-[40px] md:pt-[80px] md:pb-[60px] xl:pt-[100px] xl:pb-[80px] min-[1911px]:px-[65px]">
+        <section className="px-[10px] pt-[50px] pb-[40px] md:pt-[50px] md:pb-[60px] xl:pt-[50px] xl:pb-[80px] min-[1911px]:px-[65px]">
           {/* Desktop / Tablet */}
           <div className="hidden md:block">
             <Image
@@ -41,7 +41,7 @@ export default function ClientsPage() {
           {/* Mobile */}
           <div className="md:hidden">
             <Image
-              src="/images/clients/dans CLIENTS-02.jpg"
+              src="/images/clients/dans CLIENTS.png"
               alt="Our clients"
               width={1562}
               height={5106}
