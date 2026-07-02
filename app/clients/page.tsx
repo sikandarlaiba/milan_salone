@@ -41,7 +41,7 @@ export default function ClientsPage() {
           {/* Mobile */}
           <div className="md:hidden">
             <Image
-              src="/images/clients/dans CLIENTS.png"
+              src="/images/clients/dans CLIENTS_mobile.png"
               alt="Our clients"
               width={1562}
               height={5106}
