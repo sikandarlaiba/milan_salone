@@ -3,11 +3,11 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "MEISDEL — Milano Salone",
-  description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+  description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングまで一貫してサポートした事例をご紹介します。出展の様子や成果を写真とともに掲載。",
   alternates: { canonical: `${SITE_URL}/works/meisdel` },
   openGraph: {
     title: "MEISDEL — Milano Salone | DANS",
-    description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+    description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングまで一貫してサポートした事例をご紹介します。出展の様子や成果を写真とともに掲載。",
     url: "/works/meisdel",
     images: [{ url: "/images/credits/meisdel/MEIS_MITSUI_2.JPG", width: 1200, height: 630, alt: "MEISDEL Milano Salone" }],
   },
@@ -35,7 +35,7 @@ const projectSchema = {
   "@type": "CreativeWork",
   name: "MEISDEL — Milano Salone",
   url: `${SITE_URL}/works/meisdel`,
-  description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+  description: "DANSがサポートしたMEISDELのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングまで一貫してサポートした事例をご紹介します。出展の様子や成果を写真とともに掲載。",
   image: `${SITE_URL}/images/credits/meisdel/MEIS_MITSUI_2.JPG`,
   creator: {
     "@type": "Organization",
@@ -58,6 +58,7 @@ export default function MeisdelPage() {
       />
 
       <main className="relative flex-1">
+        <h1 className="sr-only">MEISDEL — Milano Salone</h1>
         {/* Hero — full screen */}
         <div className="relative left-1/2 w-screen -translate-x-1/2 aspect-[3/2] md:aspect-auto md:h-screen">
           <Image
@@ -72,7 +73,7 @@ export default function MeisdelPage() {
 
         {/* Project info + description */}
         <section className="px-[10px] pt-[40px] pb-[40px] md:pt-[40px] md:pb-[40px] xl:pt-[50px] xl:pb-[50px] min-[1911px]:px-[65px]">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[18px] xl:text-[20px]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-x-[40px] gap-y-[20px] text-[16px] leading-[1.4] md:text-[21px] xl:text-[23px]">
             <div>
               <div className="md:flex md:gap-[10px]">
                 <p className="text-[#8B8B8B] md:w-[160px] xl:w-[200px] flex-shrink-0">Client</p>
@@ -92,11 +93,27 @@ export default function MeisdelPage() {
               </div>
             </div>
             <div>
-              <p>
-                The Saintnine Tokyo embodies its brand philosophy, “Play with Soul,” pursuing a unique approach that fuses intelligence and emotion within the world of sports. From spatial design to the creation of a comprehensive brand identity — including the logo — the project achieved total branding integration.Every element that shapes the golfing experience, such as carts, tee markers, and course maps, was meticulously designed to infuse the brand’s worldview throughout the entire space.
+              <p className="body-en">
+                MEISDEL is a bespoke luxury kitchen brand by Tanico Corporation, one of Japan&apos;s leading commercial kitchen equipment manufacturers.
+                <br />
+                Their participation in Salone del Mobile.Milano aimed to expand global recognition and strengthen their position in the international luxury market, where they unveiled their flagship kitchen, ANIMA 01.
               </p>
-              <p className="mt-[20px]">
-                The Saintnine Tokyoは、「Play with Soul」というブランドフィロソフィーのもと、スポーツに知性と感性を融合させる独自のアプローチを追求。空間設計からロゴを含むブランド・アイデンティティ構築までを一貫して手がけ、トータルブランディングを実現したプロジェクト。カートやティーマーク、コースマップなど、ゴルフ体験を構成するすべての要素をデザインし、ブランドの世界観を空間全体に浸透させた。
+              <p className="mt-[10px]">
+                Through DANS&apos;s exhibition design and integrated production — covering spatial design, PR, and marketing — the project drew significant attention from design professionals, architects, and media across Italy and beyond, generating extensive coverage in prestigious international design publications.
+              </p>
+              <p className="mt-[10px]">
+                By showcasing exceptional Japanese craftsmanship alongside an original design philosophy, the exhibition successfully communicated MEISDEL&apos;s vision on one of the world&apos;s greatest design stages — making a significant contribution to establishing them as a globally recognized luxury kitchen brand.
+              </p>
+              <p className="body-jp mt-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
+                MEISDELは、業務用厨房機器有名メーカー・タニコーが展開するフルオーダーキッチンブランドである。
+                <br />
+                ミラノサローネ（ミラノデザインウィーク／フォーリサローネ）への出展は、世界市場におけるブランド認知の拡大とブランド価値の向上を目的として実施。展示では、ラグジュアリーキッチン「ANIMA 01」を発表した。
+              </p>
+              <p className="body-jp mt-[10px] text-[15px] md:text-[20px] xl:text-[22px]">
+                DANSが手掛けた展示空間デザインと、展示設計からPR・マーケティングまでを一体化した戦略的なプロデュースにより、イタリア市場をはじめ、世界各国のデザイン関係者や主要メディアから高い評価と大きな注目を獲得。一流メディアにおける多数の記事露出を実現した。
+              </p>
+              <p className="body-jp mt-[10px] text-[15px] md:text-[20px] xl:text-[22px]">
+                日本の職人技術に裏打ちされた高品質と、独創的なデザインが生み出す新たなライフスタイルの可能性を国際的なデザインの舞台で発信し、MEISDELのグローバルブランドイメージの確立に大きく貢献した。
               </p>
             </div>
           </div>

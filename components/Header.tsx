@@ -24,18 +24,18 @@ export default function Header() {
               <Image
                 src="/images/logo/DANS_logo_800x800px copy.png"
                 alt="DANS"
-                width={130}
-                height={130}
-                style={{ height: "auto" }}
+                width={2248}
+                height={391}
+                style={{ width: 130, height: "auto" }}
                 priority
               />
             </Link>
             <Image
               src="/images/logo/SALONE_logo_800x800px copy.png"
               alt="Milano Salone"
-              width={170}
-              height={170}
-              style={{ height: "auto", filter: "invert(1) brightness(0.455) invert(1)" }}
+              width={3037}
+              height={404}
+              style={{ width: 170, height: "auto", filter: "invert(1) brightness(0.455) invert(1)" }}
               priority
             />
           </div>
@@ -80,19 +80,17 @@ export default function Header() {
                 <Image
                   src="/images/logo/DANS_logo_800x800px copy.png"
                   alt="DANS"
-                  width={130}
-                  height={130}
-                  style={{ height: "auto" }}
-                  priority
+                  width={2248}
+                  height={391}
+                  style={{ width: 130, height: "auto" }}
                 />
               </Link>
               <Image
                 src="/images/logo/SALONE_logo_800x800px copy.png"
                 alt="Milano Salone"
-                width={130}
-                height={130}
-                style={{ height: "auto", filter: "invert(1) brightness(0.455) invert(1)" }}
-                priority
+                width={3037}
+                height={404}
+                style={{ width: 130, height: "auto", filter: "invert(1) brightness(0.455) invert(1)" }}
               />
             </div>
             <button

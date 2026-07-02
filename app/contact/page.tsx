@@ -3,11 +3,11 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "お問い合わせ",
-  description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスで、日本語・イタリア語・英語対応しています。",
+  description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスを拠点に、日本語・イタリア語・英語に対応。出展のご検討段階から、お気軽にご連絡ください。",
   alternates: { canonical: `${SITE_URL}/contact` },
   openGraph: {
     title: "お問い合わせ | DANS",
-    description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスで、日本語・イタリア語・英語対応しています。",
+    description: "ミラノサローネ出展に関するご相談・お問い合わせはDANSへ。東京・ミラノのオフィスを拠点に、日本語・イタリア語・英語に対応。出展のご検討段階から、お気軽にご連絡ください。",
     url: "/contact",
     images: [{ url: "/images/contact/shapelined-_JBKdviweXI-unsplash.jpg", width: 1200, height: 630, alt: "DANS お問い合わせ" }],
   },

@@ -3,7 +3,8 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Privacy Policy",
-  description: "DANSのプライバシーポリシー。",
+  description:
+    "DANSのプライバシーポリシー。お問い合わせやアクセス解析等で取得する個人情報の利用目的・取り扱い・第三者提供についてご案内します。",
   alternates: { canonical: `${SITE_URL}/privacy` },
 };
 

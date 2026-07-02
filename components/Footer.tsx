@@ -22,13 +22,13 @@ export default function Footer() {
         <div className="min-[800px]:w-1/2 min-[800px]:grid min-[800px]:grid-cols-2 min-[800px]:gap-x-[20px]">
           {/* Milan */}
           <div className="mt-[20px] min-[800px]:mt-0">
-            <p className="font-medium">Milan</p>
+            <p>Milan</p>
             <p className="mt-[8px]">Via Ebro 4, Milan 20141, Italy</p>
             <p>Tel +39 02 36560702</p>
           </div>
           {/* Tokyo */}
           <div className="mt-[20px] min-[800px]:mt-0">
-            <p className="font-medium">Tokyo</p>
+            <p>Tokyo</p>
             <p className="mt-[8px]">NL Building 2F, 2-13-16, Minamiaoyama,</p>
             <p>Minato-ku, Tokyo, Japan</p>
             <p>Tel +81 3 64349498</p>

@@ -35,7 +35,13 @@ export default function ProjectCard({ project }: { project: Project }) {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        <Image src={project.image} alt={project.name} fill className="object-cover" />
+        <Image
+          src={project.image}
+          alt={project.name}
+          fill
+          sizes="(max-width: 768px) 100vw, 50vw"
+          className="object-cover"
+        />
         {project.video && (
           <video
             ref={videoRef}

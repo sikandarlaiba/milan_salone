@@ -3,11 +3,11 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "DRAFT — Milano Salone",
-  description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+  description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングまで一貫してサポートした事例をご紹介します。出展の様子や成果を写真とともに掲載。",
   alternates: { canonical: `${SITE_URL}/works/draft` },
   openGraph: {
     title: "DRAFT — Milano Salone | DANS",
-    description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+    description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングまで一貫してサポートした事例をご紹介します。出展の様子や成果を写真とともに掲載。",
     url: "/works/draft",
     images: [{ url: "/images/credits/drafts/DAFT_about_DRAFT_26_DSC01280_s_e.png", width: 1200, height: 630, alt: "DRAFT Milano Salone" }],
   },
@@ -37,7 +37,7 @@ const projectSchema = {
   "@type": "CreativeWork",
   name: "DRAFT — Milano Salone",
   url: `${SITE_URL}/works/draft`,
-  description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングを一貫してサポート。",
+  description: "DANSがサポートしたDRAFTのミラノサローネ出展。展示企画・空間設計・運営・PR＆マーケティングまで一貫してサポートした事例をご紹介します。出展の様子や成果を写真とともに掲載。",
   image: `${SITE_URL}/images/credits/drafts/DAFT_about_DRAFT_26_DSC01280_s_e.png`,
   creator: {
     "@type": "Organization",
@@ -60,6 +60,7 @@ export default function DraftPage() {
       />
 
       <main className="relative flex-1">
+        <h1 className="sr-only">DRAFT — Milano Salone</h1>
         {/* Hero — full screen */}
         <div className="relative left-1/2 w-screen -translate-x-1/2 aspect-[3/2] md:aspect-auto md:h-screen">
           <Image

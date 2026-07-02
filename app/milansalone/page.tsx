@@ -84,11 +84,11 @@ export default function MilanoSalonePage() {
             <p className="body-en font-bold leading-[1.3] mt-[10px] text-[32px] md:text-[48px] xl:text-[72px] min-[1911px]:text-[54px]">
               MILANO SALONE
             </p>
-            <p className="body-en mt-[50px] text-[18px] md:text-[20px] xl:text-[24px]">
-              The world&apos;s most famous design trade fair.
-            </p>
-            <p className="body-jp mt-[6px] text-[18px] md:text-[20px] xl:text-[24px]">
+            <p className="body-jp mt-[50px] text-[18px] md:text-[20px] xl:text-[22px]">
               世界で最も有名なデザインの見本市
+            </p>
+            <p className="body-en mt-[10px] text-[18px] md:text-[22px] xl:text-[25px]">
+              The world&apos;s most famous design trade fair.
             </p>
           </div>
         </div>
@@ -105,18 +105,18 @@ export default function MilanoSalonePage() {
               </p>
             </div>
 
-            <div className="text-[16px] md:text-[18px] xl:text-[20px] leading-[1.4]">
-              <p className="body-jp min-[1920px]:text-[20px]">
+            <div className="text-[16px] md:text-[22px] xl:text-[25px] leading-[1.4]">
+              <p className="body-jp min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 サローネ・デル・モービレ・ミラノ（Salone del Mobile.Milano / ミラノサローネ国際家具見本市）は、イタリア家具工業会社 Federlegno Arredo Evento により 1961 年から始められてきた国際的なデザイン見本市です。ミラノ市の Rho パビリオンで「サローネ木国際寝具見本市」、「サローネ国際キッチン見本市」、「サローネ国際照明器具見本市（エウロルーチェ）」、「サテリタ（若手デザイナー専用）」、「サローネ国際初期部品見本市」などの複数の見本市が同時開催されます。現代家具・インテリアデザインの世界をリードする見本市として位置づけられています。
               </p>
-              <p className="body-jp mt-[20px] min-[1920px]:text-[20px]">
+              <p className="body-jp mt-[20px] min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 その規模はインテリアデザインの見本市としては世界最大で、約 2,500 社もの企業が集まり、イタリア国内、海外から来場者数は 30 万人を超えます。
               </p>
 
-              <p className="body-en mt-[30px] min-[1920px]:text-[21px]">
+              <p className="body-en mt-[30px] min-[1920px]:text-[22px]">
                 The Salone del Mobile.Milano (Milan International Furniture Fair) is a world-renowned design fair organized by the Italian furniture industry association Federlegno Arredo Evento since 1961. Held at the Rho Pavilion in Milan, multiple trade fairs are held simultaneously, including the &ldquo;Salone del Mobile,&rdquo; &ldquo;Salone del Cucina,&rdquo; &ldquo;Salone del Lavoro,&rdquo; &ldquo;Salone del Bagno,&rdquo; &ldquo;Salone Satellite&rdquo; (dedicated to emerging designers), and the &ldquo;Salone del Luce.&rdquo; Every year, the event brings together cutting-edge furniture designs from around the world.
               </p>
-              <p className="body-en mt-[20px] min-[1920px]:text-[21px]">
+              <p className="body-en mt-[20px] min-[1920px]:text-[22px]">
                 It is the world&apos;s largest interior design trade fair, bringing together some 2,500 companies on a site spanning approximately 210,000 square meters, and attracting over 300,000 visitors from Italy and abroad.
               </p>
             </div>
@@ -158,30 +158,30 @@ export default function MilanoSalonePage() {
               </p>
             </div>
 
-            <div className="text-[16px] md:text-[18px] xl:text-[20px] leading-[1.4]">
-              <p className="body-jp min-[1920px]:text-[20px] ">
+            <div className="text-[16px] md:text-[22px] xl:text-[25px] leading-[1.4]">
+              <p className="body-jp min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 フォーリサローネは、サローネ・デル・モービレ・ミラノの開催期間に合わせてミラノの街全体で行われるデザインの展覧会です。サローネ・デル・モービレよりも、家具専門企業だけでなく、様々な分野のデザインが集まります。
               </p>
-              <p className="body-jp mt-[10px] min-[1920px]:text-[20px]">
+              <p className="body-jp mt-[10px] min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 元々は、1980 年代に、複数の家具製作会社や産業デザイン会社などが自然発生的に始まりましたが、現在は自動車、テクノロジー、電気通信、アート、ファッション、食などの様々な分野にさらに広がりました。近年では、TOYOTA、CANON、東芝、河合楽器、パナソニックなど日本企業も出展するようになります。
               </p>
-              <p className="body-jp mt-[10px] min-[1920px]:text-[20px]">
+              <p className="body-jp mt-[10px] min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 フォーリサローネは、中心的な運営者を持ちません。それぞれのイベント経営者は、自分で全て運営するか、あるいは Studiolabo というサローネ期間中のスペース選びをサポートする組織や、Fuorisalone に記載されるような組織などをコンタクトすることができます。
               </p>
-              <p className="body-jp mt-[10px] min-[1920px]:text-[20px] ">
+              <p className="body-jp mt-[10px] min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 サローネ・デル・モービレとフォーリサローネは、総称してミラノデザインウィーク、あるいはミラノデザインウィークと呼ばれます。ミラノサローネ期間中は、デザインがミラノを覆います。街を舞台としてデザインの名の下で 7 日間その景観を大きく変えるパーティー、イベントが開催されます。ミラノはこの 1 週間その様相を大きく変えるのです。
               </p>
 
-              <p className="body-en mt-[20px] min-[1920px]:text-[21px]">
+              <p className="body-en mt-[20px] min-[1920px]:text-[22px]">
                 Fuorisalone is a design exhibition that takes place throughout the city of Milan during the Salone del Mobile in Milan. Unlike the Salone del Mobile, which focuses on furniture companies, Fuorisalone brings together design from a wide variety of fields.
               </p>
-              <p className="body-en mt-[10px] min-[1920px]:text-[21px]">
+              <p className="body-en mt-[10px] min-[1920px]:text-[22px]">
                 Originally, it was a trade fair that began spontaneously in the 1980s when a group of volunteers from various furniture manufacturers and industrial design firms came together. Today, it has expanded to cover a wide range of fields, including automobiles, technology, telecommunications, art, fashion, and food. In recent years, Japanese companies such as Toyota, Canon, Toshiba, Kawai Musical Instruments, and Panasonic have been particularly active.
               </p>
-              <p className="body-en mt-[10px] min-[1920px]:text-[21px]">
+              <p className="body-en mt-[10px] min-[1920px]:text-[22px]">
                 Fuorisalone has no central organizer. Event organizers can either manage everything on their own or contact organizations such as Studiolabo, which assists with finding spaces during Salone, or groups that provide support for strategies aimed at being selected by Fuorisalone.it.
               </p>
-              <p className="body-en mt-[10px] min-[1920px]:text-[21px]">
+              <p className="body-en mt-[10px] min-[1920px]:text-[22px]">
                 Salone del Mobile and Fuorisalone are collectively known as Milan Design Week. During Milan Design Week, design takes over Milan. Using the city as a stage, over a thousand parties and events are held over seven days in the name of design. Milan undergoes a dramatic transformation during this week.
               </p>
             </div>
@@ -202,17 +202,17 @@ export default function MilanoSalonePage() {
         <section className="px-[10px] pt-[40px] pb-[40px] md:pt-[60px] md:pb-[60px] xl:pt-[80px] xl:pb-[80px] min-[1911px]:px-[65px]">
           {/* Title block — right-aligned on tablet+, full width on mobile */}
           <div className="md:ml-[calc(50%+20px)]">
-            <h2 className="body-jp font-bold mb-0 text-[20px] md:text-[24px] xl:text-[28px] min-[1920px]:text-[25px]">
+            <h2 className="body-jp font-bold mb-0 text-[20px] md:text-[25px] xl:text-[28px] min-[1920px]:text-[25px]">
               群を抜いた来場者数
             </h2>
             <p className="body-en font-bold mt-[20px] text-[16px] md:text-[18px] xl:text-[22px] min-[1920px]:text-[45px] leading-none">
               An unprecedented number of visitors
             </p>
-            <div className="mt-[20px] text-[16px] md:text-[18px] xl:text-[20px] leading-[1.4]">
-              <p className="body-jp min-[1920px]:text-[20px]">
+            <div className="mt-[20px] text-[16px] md:text-[22px] xl:text-[25px] leading-[1.4]">
+              <p className="body-jp mt-[20px] min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 世界で多くのデザイン見本市が開かれていますが、ミラノサローネは世界 3 大見本市の中でもさらに群を抜いた集客力を誇ります。
               </p>
-              <p className="body-en mt-[10px] min-[1920px]:text-[20px]">
+              <p className="body-en mt-[10px] min-[1920px]:text-[22px] ">
                 While there are many design trade shows held around the world, the Salone del Mobile in Milan stands out among the world&apos;s three major trade shows for its exceptional ability to draw crowds.
               </p>
             </div>
@@ -267,26 +267,28 @@ export default function MilanoSalonePage() {
         {/* Section 4 — メディアの注目 */}
         <section className="px-[10px] pt-[40px] pb-[40px] md:pt-[60px] md:pb-[60px] xl:pt-[80px] xl:pb-[80px] min-[1911px]:px-[65px]">
           <div className="md:ml-[calc(50%+20px)]">
-            <h2 className="body-jp font-bold mb-0 text-[20px] md:text-[24px] xl:text-[28px] min-[1920px]:text-[25px]">
+            <h2 className="body-jp font-bold mb-0 text-[20px] md:text-[25px] xl:text-[28px] min-[1920px]:text-[25px]">
               メディアの注目
             </h2>
             <p className="body-en font-bold mt-[20px] text-[15px] md:text-[18px] xl:text-[22px] min-[1920px]:text-[45px] leading-none">
               Media attention
             </p>
 
-            <div className="mt-[30px] text-[16px] md:text-[18px] xl:text-[20px] leading-[1.4]">
-              <p className="body-jp min-[1920px]:text-[20px]">
+            <div className="mt-[30px] text-[16px] md:text-[22px] xl:text-[25px] leading-[1.4]">
+              <p className="body-jp min-[1920px]:text-[19px] text-[15px] md:text-[20px] xl:text-[22px]">
                 ミラノサローネには世界から 5,000 人を超えるメディア関係者が取材に訪れ、様々なジャンル・媒体のメディアに取り上げられることから、ミラノサローネはデザイン発信地として世界的に認められています。
               </p>
-              <p className="body-jp mt-[12px] min-[1920px]:text-[20px]">
+              <p className="body-jp mt-[10px] min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 フォーリサローネも開催前からすでにメディアに取り上げられる話題になる出展企業も多くあります。期間前・期間中・期間後に「見逃せない展示」「最も成功を収めた企業」など、様々なテーマで全世界に発信されます。
               </p>
-              <p className="body-en mt-[20px] min-[1920px]:text-[20px]">
+
+              <p className="body-en mt-[20px] min-[1920px]:text-[22px]">
                 With over 5,000 media representatives from around the world attending the Salone del Mobile to cover the event, and given the extensive coverage it receives across various genres and media outlets, the Salone del Mobile is globally recognized as a leading hub for design.
               </p>
-              <p className="body-en mt-[12px] min-[1920px]:text-[20px]">
+              <p className="body-en mt-[10px] min-[1920px]:text-[22px] ">
                 Many exhibitors at Fuorisalone are already generating buzz in the media even before the event begins. Before, during, and after the event, stories on various themes—such as &ldquo;must-see exhibitions&rdquo; and &ldquo;the most successful companies&rdquo;—are shared with audiences worldwide.
               </p>
+            
             </div>
           </div>
         </section>
@@ -304,18 +306,18 @@ export default function MilanoSalonePage() {
         {/* Section 5 — DANSのサポート */}
         <section className="px-[10px] pt-[40px] pb-[60px] md:pt-[60px] md:pb-[80px] xl:pt-[80px] xl:pb-[100px] min-[1911px]:px-[65px]">
           <div className="md:ml-[calc(50%+20px)]">
-            <h2 className="body-jp font-bold mb-0 text-[20px] md:text-[24px] xl:text-[28px] min-[1920px]:text-[25px]">
+            <h2 className="body-jp font-bold mb-0 text-[20px] md:text-[25px] xl:text-[28px] min-[1920px]:text-[25px]">
               DANSのサポート
             </h2>
             <p className="body-en font-bold mt-[20px] text-[15px] md:text-[18px] xl:text-[22px] min-[1920px]:text-[45px] leading-none">
               DANS Support
             </p>
 
-            <div className="mt-[30px] text-[16px] md:text-[20px] xl:text-[21px] leading-[1.4]">
-              <p className="body-jp min-[1920px]:text-[20px]">
+            <div className="mt-[30px] text-[16px] md:text-[22px] xl:text-[25px] leading-[1.4]">
+              <p className="body-jp min-[1920px]:text-[20px] text-[15px] md:text-[20px] xl:text-[22px]">
                 世界各国のデザイナー、企業が集まる中で、出展を成功させ注目を得るためには、高度な展示企画、空間デザイン、マーケティングなどを要します。DANS は、現場リサーチから展示企画・設計から運営、PR＆マーケティングまで全てをサポートいたします。
               </p>
-              <p className="body-en mt-[16px] min-[1920px]:text-[20px]">
+              <p className="body-en mt-[16px] min-[1920px]:text-[22px]">
                 With designers and companies from around the world gathering at these events, achieving a successful exhibition and attracting attention requires sophisticated exhibition planning, spatial design, and marketing. DANS provides comprehensive support for everything from on-site research and exhibition planning and design to operations, PR, and marketing.
               </p>
             </div>

@@ -3,11 +3,11 @@ import { SITE_URL } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "クライアント実績",
-  description: "DANSがミラノサローネ出展をサポートしたクライアント一覧。トヨタ・ダイキンをはじめ、多数の日本企業の出展をプロデュースしてきました。",
+  description: "DANSがミラノサローネ出展をサポートしたクライアント一覧。トヨタ・ダイキンをはじめ、多数の日本企業の出展をプロデュース。事前リサーチから空間デザイン、運営、PR＆マーケティングまで一貫した実績をご紹介します。",
   alternates: { canonical: `${SITE_URL}/clients` },
   openGraph: {
     title: "クライアント実績 | DANS",
-    description: "DANSがミラノサローネ出展をサポートしたクライアント一覧。トヨタ・ダイキンをはじめ、多数の日本企業の出展をプロデュースしてきました。",
+    description: "DANSがミラノサローネ出展をサポートしたクライアント一覧。トヨタ・ダイキンをはじめ、多数の日本企業の出展をプロデュース。事前リサーチから空間デザイン、運営、PR＆マーケティングまで一貫した実績をご紹介します。",
     url: "/clients",
     images: [{ url: "/images/main/milan-landingimg.jpg", width: 1200, height: 630, alt: "DANS クライアント実績" }],
   },
@@ -23,7 +23,8 @@ export default function ClientsPage() {
       <Header />
 
       <main className="relative pt-[65px] md:pt-[61px] xl:pt-[75px] flex-1">
-        <section className="px-[10px] py-[40px] md:py-[60px] xl:py-[80px] min-[1911px]:px-[65px]">
+        <h1 className="sr-only">クライアント実績 — DANSがサポートしたミラノサローネ出展</h1>
+        <section className="px-[10px] pt-[50px] pb-[40px] md:pt-[80px] md:pb-[60px] xl:pt-[100px] xl:pb-[80px] min-[1911px]:px-[65px]">
           {/* Desktop / Tablet */}
           <div className="hidden md:block">
             <Image
@@ -46,7 +47,6 @@ export default function ClientsPage() {
               height={5106}
               sizes="100vw"
               className="w-full h-auto"
-              priority
             />
           </div>
         </section>

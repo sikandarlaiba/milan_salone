@@ -50,6 +50,7 @@ const organizationSchema = {
   "@type": "Organization",
   name: "DANS",
   url: siteUrl,
+  logo: `${siteUrl}/images/logo/DANS_logo_800x800px copy.png`,
   description:
     "ミラノサローネ・フォーリサローネへの出展を現場リサーチから展示企画・設計・運営・PR＆マーケティングまで一貫してサポートするエージェンシー。",
   areaServed: ["JP", "IT"],

@@ -12,7 +12,7 @@ const homeSchema = {
 };
 
 export const metadata: Metadata = {
-  title: "ミラノサローネ出展サポートサービス",
+  title: "ミラノサローネ出展サポートサービス | DANS",
   description:
     "DANSは、ミラノサローネ・フォーリサローネへの出展を現場リサーチから展示企画・設計・運営・PR＆マーケティングまで一貫してサポートします。",
   alternates: {

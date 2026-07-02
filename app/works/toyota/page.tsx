@@ -38,11 +38,6 @@ const pair2B = [
   `${base}/TOYOTA-SALONE_Setsuna-41.jpg`,
 ];
 
-const pair2C = [
-  `${base}/TOYOTA-SALONE_Setsuna-44.JPG`,
-  `${base}/TOYOTA-SALONE_Setsuna-47.JPG`,
-];
-
 const grid4B = [
   `${base}/TOYOTA-SALONE_Setsuna-44.JPG`,
   `${base}/TOYOTA-SALONE_Setsuna-46.JPG`,
@@ -101,6 +96,7 @@ export default function ToyotaPage() {
       />
 
       <main className="relative flex-1">
+        <h1 className="sr-only">TOYOTA Setsuna — Milano Salone</h1>
         {/* Hero — full screen */}
         <div className="relative left-1/2 w-screen -translate-x-1/2 aspect-[3/2] md:aspect-auto md:h-screen">
           <Image
